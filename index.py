@@ -13,12 +13,6 @@ class Patient:
 	def read(self):
 		return "".join(["Patient Informations\n","Id : ",str(self.mbr_id),"\nName : ",self.name,"\nGender : ",self.gender,"\nAge : ",self.age,"\nAddress : ",self.address,"\nPhone : ",self.phone ])
 
-	def update(self,name,gender,age,address,phone):
-		self.name = name
-		self.gender = gender
-		self.age = age
-		self.address = address
-		self.phone = phone
 
 from bottle import get, post, request,route, run, template,put,delete
 pat_dict = {}
@@ -28,7 +22,7 @@ pat_dict = {}
 def patient():
     return '<b>Patient is working fine do somthing with it /create,/update,/delete</b>!'
 
-@post('/patient/create')
+@post('/patient')
 def create():
 	name = request.POST['name']
 	gender = request.POST['gender']
