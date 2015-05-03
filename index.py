@@ -1,6 +1,9 @@
+"""pull request changes for user checking """
 id_count = 0
 class Patient:
+	"""pull request changes for user checking """
 	def __init__(self,**kwarg):
+		"""pull request changes for user checking """
 		global id_count
 		id_count +=1
 		self.mbr_id = id_count
@@ -11,9 +14,11 @@ class Patient:
 		self.phone = kwarg["phone"]
 
 	def read(self):
+		"""pull request changes for user checking """
 		return "".join(["Patient Informations\n","Id : ",str(self.mbr_id),"\nName : ",self.name,"\nGender : ",self.gender,"\nAge : ",self.age,"\nAddress : ",self.address,"\nPhone : ",self.phone ])
 
 	def update(self,**kwarg):
+		"""pull request changes for user checking """
 		self.name = kwarg["name"]
 		self.gender = kwarg["gender"]
 		self.age = kwarg["age"]
@@ -56,5 +61,11 @@ def update(id):
 def delete(id):
 	del(pat_dict[id])
 	return "Deleted Sucessfully {0}".format(id)
-
+"""pull request changes for user checking """
+"""pull request changes for user checking """
 run(host='0.0.0.0', port=8080)
+"""pull request changes for user checking """
+"""pull request changes for user checking """
+"""pull request changes for user checking """
+
+
