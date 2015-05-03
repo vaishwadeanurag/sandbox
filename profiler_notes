@@ -1,0 +1,15 @@
+https://wiki.python.org/moin/PythonSpeed/PerformanceTips#Profiling_Code
+
+https://github.com/jrfonseca/gprof2dot/blob/master/sample.png
+
+https://github.com/pwaller/pyprof2calltree
+
+
+for plotting graph = graphviz
+pip install gprof2dot
+pycallgraph
+
+
+
+python -m cProfile -o profile.pstats consumer.py
+gprof2dot -f pstats profile.pstats | dot -Tsvg -o consumer1.svg
